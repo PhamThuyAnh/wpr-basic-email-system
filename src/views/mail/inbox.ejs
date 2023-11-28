@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email | Inbox</title>
+	<link rel="stylesheet" type="text/css" href="styles/mail.css">
+	<script src="../mail-box-scripts.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<a href="/" id="left">
+				<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" />
+			</a>
+			<div id="right">
+				<a href="#" id="proflie-link">
+					<img src="https://th.bing.com/th/id/R.9d32bec8058bd3595a63a08a8cc12ade?rik=9cCTin36GLU%2f5w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_87237.png&ehk=hVpH%2bC7rwlA1j2KqxGpMs1sp9l0RgM0jjRJsJsvDoPc%3d&risl=&pid=ImgRaw&r=0" alt="Avatar" style="width: 27px; margin-right: 10px" />
+					<%= params.username ? params.username : '' %>
+				</a>
+				<a href="/sign-out"><button id="sign-out-link">Sign out</button></a>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<img src="/icons/compose.png" alt="compose" />
+				<a href="/compose">Compose</a>
+			</li>
+			<li class="selected">
+				<img src="/icons/inbox.png" alt="inbox" />
+				<a href="/inbox">Inbox</a>
+			</li>
+			<li>
+				<img src="/icons/outbox.png" alt="outbox" />
+				<a href="/outbox">Outbox</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="inbox" class="page">
+			<div class="empty-msg">
+				<p> <%= msg %> </p>
+			</div>
+			<div class="tables">
+				<table class="tools">
+					<tbody>
+						<tr class="compose-tools">
+							<td>
+								<input id="select-all-btn" type="checkbox" <%= req.query.selectAll === 'true' ? 'checked' : '' %> />
+							</td>
+							<td>
+								<button class="del-btn" id="inbox-delete-btn" data-action="inbox" type="button">Delete</button>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="mails">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Sender</th>
+							<th>Subject</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for (let email of emails) { %>
+						<tr id="<%= 'email_' + email.id %>">
+							<td>
+								<input type="checkbox" class="checkboxes" id="<%= 'checkbox_' + email.id %>" />
+							</td>
+							<td><%= email.username %></td>
+							<td class="email-content">
+								<a href=<%= '/email-detail/' + email.id %>>
+									<%= email.subject %>
+								</a>
+								<span class="email-body">
+									<%= email.body %>
+								</span>
+							</td>
+							<td>
+								<% const emailDate = new Date(email.createdAt);
+									const now = new Date();
+									let formattedDate;
+									if (emailDate.getFullYear() === now.getFullYear()) {
+											formattedDate = emailDate.toLocaleString('en-US', {
+													month: 'short',
+													day: 'numeric'
+											});
+									} else {
+											formattedDate = emailDate.toLocaleString('en-US', {
+													day: '2-digit',
+													month: '2-digit',
+													year: '2-digit'
+											});
+									} %> <%= formattedDate %>
+							</td>
+						</tr>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="pagination">
+				<button id="prev-button" type="button"> &lt; </button>
+				<% for (let i = 1; i <= totalPages; i++) { %>
+				<button class="page-button" data-page="<%= i %>"><%= i %></button>
+				<% } %>
+				<button id="next-button" type="button"> &gt; </button>
+			</div>
+
+		</section>
+	</main>
+
+</body>
+
+</html>

@@ -1,0 +1,912 @@
+@import url(font.css);
+
+.pure-button,
+a {
+  text-decoration: none
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+  min-width: 0 !important
+}
+
+.pure-button {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer
+}
+
+.challenge .input-group input[type=email]:focus,
+.challenge .input-group input[type=password]:focus,
+.challenge .input-group input[type=text]:focus,
+.pure-button:focus {
+  outline: 0
+}
+
+.pure-form input:not([type]),
+.pure-form input[type=email],
+.pure-form input[type=password],
+.pure-form input[type=text] {
+  padding: .5em .6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  box-sizing: border-box
+}
+
+.pure-form input[type=color] {
+  padding: .2em .5em
+}
+
+.pure-form label {
+  margin: .5em 0 .2em
+}
+
+.pure-form fieldset {
+  margin: 0;
+  padding: .35em 0 .75em;
+  border: 0
+}
+
+p {
+  margin: 0
+}
+
+#account-attributes-challenge input[type=radio]:checked+label,
+a {
+  color: #188fff
+}
+
+.pure-form input[type=email],
+.pure-form input[type=password],
+.pure-form input[type=text] {
+  padding: .75em .65em;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+  border-radius: 2px;
+  color: #26282a;
+  width: 100%
+}
+
+.pure-form input[type=email]:focus,
+.pure-form input[type=password]:focus,
+.pure-form input[type=search]:focus,
+.pure-form input[type=text]:focus {
+  border-color: #188fff
+}
+
+.pure-form input.error {
+  border: 1px solid #dd1037
+}
+
+.pure-form button[type=submit] {
+  margin-top: .5rem
+}
+
+.pure-button,
+input.pure-button {
+  padding: .75em 1.45em;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 1.17647rem;
+  color: #42597a;
+  background-color: #eeeef5;
+  margin: 0;
+  width: 100%;
+  border: 1px solid #e4e7ef;
+  white-space: normal
+}
+
+.puree-button-primary,
+input.puree-button-primary {
+  color: #fff;
+  background: #188fff;
+  border: 1px solid #188fff
+}
+
+.puree-button-primary:hover,
+input.puree-button-primary:hover {
+  background: #0f69ff;
+  border-color: #0f69ff;
+  color: #fff
+}
+
+.puree-button-primary:active,
+.puree-button-primary:focus,
+input.puree-button-primary:active,
+input.puree-button-primary:focus {
+  background: #003abc;
+  border-color: #003abc;
+  color: #fff
+}
+
+.puree-button-primary[disabled],
+input.puree-button-primary[disabled] {
+  border: 1px solid #188fff
+}
+
+.puree-button-secondary,
+input.puree-button-secondary {
+  color: #188fff;
+  background: 0 0;
+  border: 1px solid #188fff
+}
+
+.puree-button-secondary:hover,
+input.puree-button-secondary:hover {
+  color: #0f69ff;
+  border-color: #0f69ff
+}
+
+.puree-button-secondary:active,
+.puree-button-secondary:focus,
+input.puree-button-secondary:active,
+input.puree-button-secondary:focus {
+  color: #003abc;
+  border-color: #003abc
+}
+
+input.pure-button[disabled] {
+  background-image: none;
+  opacity: 1
+}
+
+.pure-button:active,
+.pure-button:focus,
+.pure-button:hover {
+  filter: none;
+  background-image: none;
+  box-shadow: none
+}
+
+.puree-v2 input[type=email],
+.puree-v2 input[type=password],
+.puree-v2 input[type=text] {
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #d8dade;
+  background-color: transparent
+}
+
+.puree-v2 input[type=email]:focus,
+.puree-v2 input[type=password]:focus,
+.puree-v2 input[type=text]:focus {
+  border-bottom: 2px solid #188fff
+}
+
+.error-msg,
+.puree-v2 .error {
+  background-color: transparent;
+  color: #dd1037;
+  padding: 4px 8px 0;
+  font-size: 12px
+}
+
+.puree-spinner-button:after {
+  display: none;
+  content: '';
+  background: url(https://s.yimg.com/wm/modern/images/fuji-spinner-1.0.1.svg) 0 0/100% no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5%;
+  right: 5%
+}
+
+.puree-spinner-button {
+  position: relative
+}
+
+html {
+  font-size: 17px
+}
+
+html.grid {
+  font-size: 18px
+}
+
+body .hide,
+div[id*=usernamereg-firstName],
+div[id*=usernamereg-legalFirstName] {
+  display: none
+}
+
+.txt-align-center {
+  text-align: center
+}
+
+strong {
+  font-weight: 500
+}
+
+body,
+html {
+  height: 100%;
+  direction: ltr
+}
+
+.oneid-form-background input[type=email],
+.oneid-form-background input[type=password],
+.oneid-form-background input[type=text] {
+  box-shadow: none;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 8px;
+  background: 0 0;
+  color: #26282a;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #d8dade
+}
+
+.oneid-form-background input[type=email]:focus,
+.oneid-form-background input[type=password]:focus,
+.oneid-form-background input[type=text]:focus {
+  outline: 0;
+  border-bottom: 2px solid #188fff
+}
+
+.challenge {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 18.82rem
+}
+
+.grid .challenge {
+  padding: 0 1.4rem
+}
+
+.challenge .challenge-heading {
+  display: block;
+  margin: .82rem 0 0;
+  font-size: 1.17647rem;
+  font-weight: 600;
+  letter-spacing: -.2px;
+  text-align: center;
+  line-height: 1.35294rem
+}
+
+.challenge .challenge-desc {
+  display: block;
+  padding: 0;
+  margin-top: .35294rem;
+  font-size: .82rem;
+  letter-spacing: -.3px;
+  line-height: 1rem;
+  text-align: center
+}
+
+.challenge .challenge-desc .email {
+  word-break: break-word
+}
+
+.challenge .button-container {
+  font-size: .82rem;
+  margin-top: 1.4rem;
+  padding: 0
+}
+
+.challenge .challenge-button {
+  font-size: .9rem;
+  font-weight: 500;
+  min-height: 2.35rem;
+  padding: .65rem 0;
+  line-height: 1rem
+}
+
+.challenge .password-container {
+  display: flex;
+  align-items: center
+}
+
+.challenge .password-container input[type=password],
+.challenge .password-container input[type=text] {
+  font-size: .82rem;
+  line-height: 1.17647rem;
+  letter-spacing: .2px;
+  padding-left: 0;
+  flex: 1
+}
+
+.challenge .password-label {
+  font-size: .7rem
+}
+
+.challenge .input-group {
+  position: relative;
+  margin-top: 1.29412rem
+}
+
+.challenge .input-group input[type=email],
+.challenge .input-group input[type=password],
+.challenge .input-group input[type=text] {
+  padding-left: 0;
+  margin: .41176rem 0 0;
+  height: 1.8rem;
+  font-size: .82rem
+}
+
+.challenge .input-group input[name=code] {
+  letter-spacing: .47059rem;
+  text-transform: uppercase;
+  display: inline-block
+}
+
+.grid .input-field-icon {
+  position: absolute;
+  bottom: .47059rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  pointer-events: none
+}
+
+.challenge .input-group.password-container input[type=password] {
+  font-weight: 800;
+  letter-spacing: .17647rem
+}
+
+.challenge .input-group label {
+  color: #999;
+  font-size: .82rem;
+  letter-spacing: -.1px;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: .7rem;
+  transition: .2s;
+  margin-top: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%
+}
+
+.challenge .input-group input[type=email]::placeholder,
+.challenge .input-group input[type=password]::placeholder,
+.challenge .input-group input[type=text]::placeholder {
+  opacity: 0
+}
+
+.challenge .input-group input[type=email]:focus::placeholder,
+.challenge .input-group input[type=password]:focus::placeholder,
+.challenge .input-group input[type=text]:focus::placeholder {
+  opacity: 1;
+  letter-spacing: .47059rem
+}
+
+.challenge .input-group input[name=code]:focus::placeholder {
+  font-weight: 500;
+  letter-spacing: .11765rem;
+  transform: scaleX(2.5);
+  transform-origin: left;
+  color: #b9bdc5
+}
+
+.challenge .input-group input[type=email]:focus~label,
+.challenge .input-group input[type=email]:not(:placeholder-shown)~label,
+.challenge .input-group input[type=password]:focus~label,
+.challenge .input-group input[type=password]:not(:placeholder-shown)~label,
+.challenge .input-group input[type=tel]:focus~label,
+.challenge .input-group input[type=tel]:not(:placeholder-shown)~label,
+.challenge .input-group input[type=text]:focus~label,
+.challenge .input-group input[type=text]:not(:placeholder-shown)~label {
+  top: -.47059rem;
+  font-size: .7rem;
+  letter-spacing: -.1px;
+  color: #262626
+}
+
+.challenge .input-group input[type=email]:focus,
+.challenge .input-group input[type=text]:focus {
+  border: none;
+  outline: 0;
+  border-bottom: .05882rem solid #188fff
+}
+
+.challenge .input-group input[type=email][aria-invalid=true],
+.challenge .input-group input[type=tel][aria-invalid=true],
+.challenge .input-group input[type=text][aria-invalid=true] {
+  border-color: #ff333a
+}
+
+.challenge .form-fieldset {
+  margin-top: .75rem
+}
+
+.challenge .form-fieldset label {
+  font-size: .7rem;
+  color: #939598
+}
+
+.login-box,
+.login-box .mbr-login-hd,
+.loginish,
+.loginish input[type=email],
+.loginish input[type=password],
+.loginish input[type=text],
+.mbr-login-hd {
+  color: #26282a
+}
+
+#login-label {
+  font-weight: 400;
+}
+
+.challenge .grid-form .form-fieldset.input-group label {
+  display: flex;
+  height: 100%;
+  top: 0;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 1.4rem;
+  padding-top: .7rem
+}
+
+.challenge .grid-form .form-fieldset.input-group input {
+  margin-top: .78rem
+}
+
+.challenge .grid-form .form-fieldset.input-group input:focus+label,
+.challenge .grid-form .form-fieldset.input-group input:not(:placeholder-shown)+label,
+.challenge .grid-form .form-fieldset.input-group input:not(:placeholder-shown)~label,
+.challenge .grid-form .form-fieldset.input-group:focus-within label,
+.no-js .challenge .grid-form .form-fieldset.input-group .field-group+label {
+  top: -.7rem;
+  align-items: initial;
+  padding-left: 0 !important;
+  letter-spacing: normal;
+  font-size: .7rem;
+  color: #262626
+}
+
+.challenge .grid-form .form-fieldset.input-group input:focus::placeholder,
+.challenge .grid-form .form-fieldset.input-group:focus-within input::placeholder,
+.no-js .challenge .grid-form .form-fieldset.input-group .field-group input::placeholder {
+  letter-spacing: normal;
+  opacity: 1
+}
+
+.challenge .grid-form .form-fieldset input.input-with-icon,
+.challenge .grid-form .form-fieldset.input-group input.input-with-icon {
+  background-size: .9rem 1rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 1.5rem
+}
+
+.challenge .input-with-icon.email-icon {
+  background-size: .9rem .7rem;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTYgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iRnVqaS1JRF9Ta192NSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlVzZXItTmFtZS1Db3B5LTkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNC4wMDAwMDAsIC0yMjYuMDAwMDAwKSIgZmlsbD0iIzIzMkEzMSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNC43MjcyNzI3LDIzNy42MzYzNjQgQzI0LjMyNTgxODIsMjM3LjYzNjM2NCAyNCwyMzcuMzExMjczIDI0LDIzNi45MDkwOTEgTDI0LDIyNi43MjcyNzMgQzI0LDIyNi4zMjUwOTEgMjQuMzI1ODE4MiwyMjYgMjQuNzI3MjcyNywyMjYgTDM5LjI3MjcyNzMsMjI2IEMzOS42NzQxODE4LDIyNiA0MCwyMjYuMzI1MDkxIDQwLDIyNi43MjcyNzMgTDQwLDIzNi45MDkwOTEgQzQwLDIzNy4zMTEyNzMgMzkuNjc0MTgxOCwyMzcuNjM2MzY0IDM5LjI3MjcyNzMsMjM3LjYzNjM2NCBMMjQuNzI3MjcyNywyMzcuNjM2MzY0IFogTTM4LjU0NTQ1NDUsMjM2LjE4MTgxOCBMMzguNTQ1NDU0NSwyMzAuNTk0OTA5IEwzMiwyMzMuMjgwNzI3IEwyNS40NTQ1NDU1LDIzMC41OTQ5MDkgTDI1LjQ1NDU0NTUsMjM2LjE4MTgxOCBMMzguNTQ1NDU0NSwyMzYuMTgxODE4IFogTTI1LjQ1NDU0NTUsMjI3LjQ1NDU0NSBMMjUuNDU0NTQ1NSwyMjguOTkyNzI3IEwzMiwyMzEuNjc5MjczIEwzOC41NDU0NTQ1LDIyOC45OTI3MjcgTDM4LjU0NTQ1NDUsMjI3LjQ1NDU0NSBMMjUuNDU0NTQ1NSwyMjcuNDU0NTQ1IFoiIGlkPSJNYWlsIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)
+}
+
+.challenge .form-fieldset .input-field-icon {
+  position: absolute;
+  background-size: .9rem 1rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  top: .7rem;
+  width: .9rem;
+  height: 1.8rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-name+.input-field-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMTYgMTMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iRnVqaS1JRF9Ta192NSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlVzZXItTmFtZS1Db3B5LTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNC4wMDAwMDAsIC0yNTcuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNi4zNjM2MzY0LDI2NS42NjY2NjcgTDM1LjYzNjM2MzYsMjY1LjY2NjY2NyBDMzUuMjM0MTgxOCwyNjUuNjY2NjY3IDM0LjkwOTA5MDksMjY1Ljk4OTUgMzQuOTA5MDkwOSwyNjYuMzg4ODg5IEMzNC45MDkwOTA5LDI2Ni43ODgyNzggMzUuMjM0MTgxOCwyNjcuMTExMTExIDM1LjYzNjM2MzYsMjY3LjExMTExMSBMMzYuMzYzNjM2NCwyNjcuMTExMTExIEMzNi43NjU4MTgyLDI2Ny4xMTExMTEgMzcuMDkwOTA5MSwyNjYuNzg4Mjc4IDM3LjA5MDkwOTEsMjY2LjM4ODg4OSBDMzcuMDkwOTA5MSwyNjUuOTg5NSAzNi43NjU4MTgyLDI2NS42NjY2NjcgMzYuMzYzNjM2NCwyNjUuNjY2NjY3IEwzNi4zNjM2MzY0LDI2NS42NjY2NjcgWiBNMzQuOTA5MDkwOSwyNjQuMjIyMjIyIEwzNi4zNjM2MzY0LDI2NC4yMjIyMjIgQzM2Ljc2NTgxODIsMjY0LjIyMjIyMiAzNy4wOTA5MDkxLDI2My44OTkzODkgMzcuMDkwOTA5MSwyNjMuNSBDMzcuMDkwOTA5MSwyNjMuMTAwNjExIDM2Ljc2NTgxODIsMjYyLjc3Nzc3OCAzNi4zNjM2MzY0LDI2Mi43Nzc3NzggTDM0LjkwOTA5MDksMjYyLjc3Nzc3OCBDMzQuNTA2OTA5MSwyNjIuNzc3Nzc4IDM0LjE4MTgxODIsMjYzLjEwMDYxMSAzNC4xODE4MTgyLDI2My41IEMzNC4xODE4MTgyLDI2My44OTkzODkgMzQuNTA2OTA5MSwyNjQuMjIyMjIyIDM0LjkwOTA5MDksMjY0LjIyMjIyMiBMMzQuOTA5MDkwOSwyNjQuMjIyMjIyIFogTTM0LjkwOTA5MDksMjYxLjMzMzMzMyBMMzYuMzYzNjM2NCwyNjEuMzMzMzMzIEMzNi43NjU4MTgyLDI2MS4zMzMzMzMgMzcuMDkwOTA5MSwyNjEuMDEwNSAzNy4wOTA5MDkxLDI2MC42MTExMTEgQzM3LjA5MDkwOTEsMjYwLjIxMTcyMiAzNi43NjU4MTgyLDI1OS44ODg4ODkgMzYuMzYzNjM2NCwyNTkuODg4ODg5IEwzNC45MDkwOTA5LDI1OS44ODg4ODkgQzM0LjUwNjkwOTEsMjU5Ljg4ODg4OSAzNC4xODE4MTgyLDI2MC4yMTE3MjIgMzQuMTgxODE4MiwyNjAuNjExMTExIEMzNC4xODE4MTgyLDI2MS4wMTA1IDM0LjUwNjkwOTEsMjYxLjMzMzMzMyAzNC45MDkwOTA5LDI2MS4zMzMzMzMgTDM0LjkwOTA5MDksMjYxLjMzMzMzMyBaIE0zOC41NDU0NTQ1LDI2OC41NTU1NTYgTDM0LjkwOTA5MDksMjY4LjU1NTU1NiBDMzQuNDM3ODE4MiwyNjYuOTA3NDQ0IDMyLjg2MTgxODIsMjY1LjY2NjY2NyAzMC4xNDQsMjY1LjY2NjY2NyBDMjcuNDI2MTgxOCwyNjUuNjY2NjY3IDI1LjkyNTgxODIsMjY2LjkwNzQ0NCAyNS40NTQ1NDU1LDI2OC41NTU1NTYgTDI1LjQ1NDU0NTUsMjU4LjQ0NDQ0NCBMMzguNTQ1NDU0NSwyNTguNDQ0NDQ0IEwzOC41NDU0NTQ1LDI2OC41NTU1NTYgWiBNMjcuMTMxNjM2NCwyNjguNTU1NTU2IEMyNy42MzIsMjY3LjcxNTYxMSAyOC4zOTkyNzI3LDI2Ny4xMTExMTEgMzAuMTQ0LDI2Ny4xMTExMTEgQzMxLjg4ODcyNzMsMjY3LjExMTExMSAzMi43MzA5MDkxLDI2Ny43MTU2MTEgMzMuMjMxMjcyNywyNjguNTU1NTU2IEwyNy4xMzE2MzY0LDI2OC41NTU1NTYgWiBNMzkuMjcyNzI3MywyNTcgTDI0LjcyNzI3MjcsMjU3IEMyNC4zMjUwOTA5LDI1NyAyNCwyNTcuMzIyODMzIDI0LDI1Ny43MjIyMjIgTDI0LDI2OS4yNzc3NzggQzI0LDI2OS42NzY0NDQgMjQuMzI1MDkwOSwyNzAgMjQuNzI3MjcyNywyNzAgTDM5LjI3MjcyNzMsMjcwIEMzOS42NzQxODE4LDI3MCA0MCwyNjkuNjc2NDQ0IDQwLDI2OS4yNzc3NzggTDQwLDI1Ny43MjIyMjIgQzQwLDI1Ny4zMjI4MzMgMzkuNjc0MTgxOCwyNTcgMzkuMjcyNzI3MywyNTcgTDM5LjI3MjcyNzMsMjU3IFogTTMwLjE4MTgxODIsMjYxLjMzMzMzMyBDMzAuNzg0LDI2MS4zMzMzMzMgMzEuMjcyNzI3MywyNjEuODE4NjY3IDMxLjI3MjcyNzMsMjYyLjQxNjY2NyBDMzEuMjcyNzI3MywyNjMuMDE0NjY3IDMwLjc4NCwyNjMuNSAzMC4xODE4MTgyLDI2My41IEMyOS41Nzk2MzY0LDI2My41IDI5LjA5MDkwOTEsMjYzLjAxNDY2NyAyOS4wOTA5MDkxLDI2Mi40MTY2NjcgQzI5LjA5MDkwOTEsMjYxLjgxODY2NyAyOS41Nzk2MzY0LDI2MS4zMzMzMzMgMzAuMTgxODE4MiwyNjEuMzMzMzMzIEwzMC4xODE4MTgyLDI2MS4zMzMzMzMgWiBNMzAuMTgxODE4MiwyNjQuOTQ0NDQ0IEMzMS41ODc2MzY0LDI2NC45NDQ0NDQgMzIuNzI3MjcyNywyNjMuODEyNzIyIDMyLjcyNzI3MjcsMjYyLjQxNjY2NyBDMzIuNzI3MjcyNywyNjEuMDE5ODg5IDMxLjU4NzYzNjQsMjU5Ljg4ODg4OSAzMC4xODE4MTgyLDI1OS44ODg4ODkgQzI4Ljc3NTI3MjcsMjU5Ljg4ODg4OSAyNy42MzYzNjM2LDI2MS4wMTk4ODkgMjcuNjM2MzYzNiwyNjIuNDE2NjY3IEMyNy42MzYzNjM2LDI2My44MTI3MjIgMjguNzc1MjcyNywyNjQuOTQ0NDQ0IDMwLjE4MTgxODIsMjY0Ljk0NDQ0NCBMMzAuMTgxODE4MiwyNjQuOTQ0NDQ0IFoiIGlkPSJDb250YWN0LUNhcmQiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==)
+}
+
+.challenge .form-fieldset .field-group:focus-within input.input-with-icon.icon-name+.input-field-icon,
+.challenge .form-fieldset input.input-with-icon.icon-name:focus+.input-field-icon {
+  background-image: url(https://s.yimg.com/wm/mbr/images/yahoo/contact-card-v0.0.1.svg)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-email+.input-field-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTYgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBpZD0iRnVqaS1JRF9Ta192NSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlVzZXItTmFtZS1Db3B5LTkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNC4wMDAwMDAsIC0yMjYuMDAwMDAwKSIgZmlsbD0iIzIzMkEzMSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNC43MjcyNzI3LDIzNy42MzYzNjQgQzI0LjMyNTgxODIsMjM3LjYzNjM2NCAyNCwyMzcuMzExMjczIDI0LDIzNi45MDkwOTEgTDI0LDIyNi43MjcyNzMgQzI0LDIyNi4zMjUwOTEgMjQuMzI1ODE4MiwyMjYgMjQuNzI3MjcyNywyMjYgTDM5LjI3MjcyNzMsMjI2IEMzOS42NzQxODE4LDIyNiA0MCwyMjYuMzI1MDkxIDQwLDIyNi43MjcyNzMgTDQwLDIzNi45MDkwOTEgQzQwLDIzNy4zMTEyNzMgMzkuNjc0MTgxOCwyMzcuNjM2MzY0IDM5LjI3MjcyNzMsMjM3LjYzNjM2NCBMMjQuNzI3MjcyNywyMzcuNjM2MzY0IFogTTM4LjU0NTQ1NDUsMjM2LjE4MTgxOCBMMzguNTQ1NDU0NSwyMzAuNTk0OTA5IEwzMiwyMzMuMjgwNzI3IEwyNS40NTQ1NDU1LDIzMC41OTQ5MDkgTDI1LjQ1NDU0NTUsMjM2LjE4MTgxOCBMMzguNTQ1NDU0NSwyMzYuMTgxODE4IFogTTI1LjQ1NDU0NTUsMjI3LjQ1NDU0NSBMMjUuNDU0NTQ1NSwyMjguOTkyNzI3IEwzMiwyMzEuNjc5MjczIEwzOC41NDU0NTQ1LDIyOC45OTI3MjcgTDM4LjU0NTQ1NDUsMjI3LjQ1NDU0NSBMMjUuNDU0NTQ1NSwyMjcuNDU0NTQ1IFoiIGlkPSJNYWlsIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-email:focus+.input-field-icon {
+  background-image: url(https://s.yimg.com/wm/mbr/images/yahoo/mail-v0.0.1.svg)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-phone+.input-field-icon {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTBweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTAgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+bW9iaWxlLWJsYWNrPC90aXRsZT4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJZSURfMDEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNC4wMDAwMDAsIC0zMTQuMDAwMDAwKSIgZmlsbD0iIzIzMUYyMCI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yOS43MTQyODU3LDMyNi4yNzI3MjcgQzI5LjcxNDI4NTcsMzI1Ljg5NTY4MiAyOS4zOTQyODU3LDMyNS41OTA5MDkgMjksMzI1LjU5MDkwOSBDMjguNjA1NzE0MywzMjUuNTkwOTA5IDI4LjI4NTcxNDMsMzI1Ljg5NTY4MiAyOC4yODU3MTQzLDMyNi4yNzI3MjcgQzI4LjI4NTcxNDMsMzI2LjY0OTA5MSAyOC42MDU3MTQzLDMyNi45NTQ1NDUgMjksMzI2Ljk1NDU0NSBDMjkuMzk0Mjg1NywzMjYuOTU0NTQ1IDI5LjcxNDI4NTcsMzI2LjY0OTA5MSAyOS43MTQyODU3LDMyNi4yNzI3MjcgWiBNMzIuNTcxNDI4NiwzMjMuNTQ1NDU1IEwyNS40Mjg1NzE0LDMyMy41NDU0NTUgTDI1LjQyODU3MTQsMzE1LjM2MzYzNiBMMzIuNTcxNDI4NiwzMTUuMzYzNjM2IEwzMi41NzE0Mjg2LDMyMy41NDU0NTUgWiBNMzIuNTcxNDI4NiwzMjcuNjM2MzY0IEwyNS40Mjg1NzE0LDMyNy42MzYzNjQgTDI1LjQyODU3MTQsMzI0LjkwOTA5MSBMMzIuNTcxNDI4NiwzMjQuOTA5MDkxIEwzMi41NzE0Mjg2LDMyNy42MzYzNjQgWiBNMjQuNzE0Mjg1NywzMTQgQzI0LjMxOTI4NTcsMzE0IDI0LDMxNC4zMDQ3NzMgMjQsMzE0LjY4MTgxOCBMMjQsMzI4LjMxODE4MiBDMjQsMzI4LjY5NTIyNyAyNC4zMTkyODU3LDMyOSAyNC43MTQyODU3LDMyOSBMMzMuMjg1NzE0MywzMjkgQzMzLjY4LDMyOSAzNCwzMjguNjk1MjI3IDM0LDMyOC4zMTgxODIgTDM0LDMxNC42ODE4MTggQzM0LDMxNC4zMDQ3NzMgMzMuNjgsMzE0IDMzLjI4NTcxNDMsMzE0IEwyNC43MTQyODU3LDMxNCBaIiBpZD0ibW9iaWxlLWJsYWNrIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-phone:focus+.input-field-icon {
+  background-image: url(https://s.yimg.com/wm/mbr/images/yahoo/mobile-v0.0.1.svg)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-password {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+QU9MIGdlbmRlciBDb3B5IDExPC90aXRsZT4KICAgIDxnIGlkPSJBT0wtZ2VuZGVyLUNvcHktMTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJwYXNzd29yZC1sb2NrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgMC4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9ImludmlzaWJsZV9ib3giPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij48L3JlY3Q+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9IkxheWVyXzciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMDAwMDAwLCAyLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAiPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNCwxNiBMMzAsMTYgTDMwLDExIEMzMCw0LjkyNDg2Nzc1IDI1LjA3NTEzMjIsOC44ODE3ODQyZS0xNiAxOSw4Ljg4MTc4NDJlLTE2IEwxNyw4Ljg4MTc4NDJlLTE2IEMxMC45MjQ4Njc4LDguODgxNzg0MmUtMTYgNiw0LjkyNDg2Nzc1IDYsMTEgTDYsMTYgTDIsMTYgQzAuODk1NDMwNSwxNiAwLDE2Ljg5NTQzMDUgMCwxOCBMMCw0MiBDMCw0My4xMDQ1Njk1IDAuODk1NDMwNSw0NCAyLDQ0IEwzNCw0NCBDMzUuMTA0NTY5NSw0NCAzNiw0My4xMDQ1Njk1IDM2LDQyIEwzNiwxOCBDMzYsMTYuODk1NDMwNSAzNS4xMDQ1Njk1LDE2IDM0LDE2IFogTTEwLDExIEMxMCw3LjEzNDAwNjc1IDEzLjEzNDAwNjgsNCAxNyw0IEwxOSw0IEMyMi44NjU5OTMyLDQgMjYsNy4xMzQwMDY3NSAyNiwxMSBMMjYsMTYgTDEwLDE2IEwxMCwxMSBaIE0zMiw0MCBMNCw0MCBMNCwyMCBMMzIsMjAgTDMyLDQwIFoiIGlkPSJTaGFwZSI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIGN4PSIxMCIgY3k9IjMwIiByPSIzIj48L2NpcmNsZT4KICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiBjeD0iMTgiIGN5PSIzMCIgcj0iMyI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgY3g9IjI2IiBjeT0iMzAiIHI9IjMiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)
+}
+
+.challenge .form-fieldset input.input-with-icon.icon-password:focus {
+  background-image: url(https://s.yimg.com/wm/mbr/images/yahoo/password-v0.0.1.svg)
+}
+
+#account-attributes-challenge {
+  width: 320px;
+  margin: 0 auto
+}
+
+.grid #account-attributes-challenge {
+  width: initial;
+  margin: initial
+}
+
+.grid #account-attributes-challenge.challenge {
+  margin: 0 auto;
+  padding: 0 1.4rem
+}
+
+#account-attributes-challenge .pure-form fieldset,
+.grid .challenge #account-attributes-challenge.challenge,
+.grid .mbr-login-hd .logo,
+.login-box .mbr-login-hd .logo {
+  padding: 0
+}
+
+#account-attributes-challenge .icon {
+  display: inline-block;
+  background-image: url(https://s.yimg.com/dh/ap/sf/modern/images/registration-sprite-v-0.0.1.png);
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 23px
+}
+
+#account-attributes-challenge .usernamereg-email {
+  margin-top: 10px;
+  margin-bottom: 3px
+}
+
+#account-attributes-challenge .yid-field {
+  position: relative;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  height: 31px
+}
+
+#usernamereg-yid {
+  padding-right: 50%
+}
+
+#account-attributes-challenge .info-icon {
+  padding: .5px 7px;
+  border-radius: 50%;
+  font-size: 9px;
+  background-image: url(https://s.yimg.com/wm/mbr/images/info-icon-black-v0.0.1.svg);
+  background-repeat: no-repeat;
+  border: 0;
+  margin-right: 2px;
+  position: relative;
+  top: -2px
+}
+
+#usernamereg-password {
+  padding-right: 4px;
+  border: 0
+}
+
+.grid #usernamereg-password {
+  padding-right: .23529rem
+}
+
+.challenge .grid-form .form-fieldset.usernamereg-password-container input {
+  border: 0;
+  margin-bottom: 0
+}
+
+.challenge .grid-form .form-fieldset.usernamereg-password-container {
+  display: flex;
+  align-content: baseline;
+  border-bottom: 1px solid #b9bdc5
+}
+
+#account-attributes-challenge .reg-link {
+  font-size: 12px;
+  margin-left: 8px
+}
+
+#account-attributes-challenge .first-name {
+  width: 48.5%
+}
+
+.grid #account-attributes-challenge .form-fieldset .first-name {
+  width: initial;
+  margin: 0
+}
+
+#account-attributes-challenge .ureg-sign-in {
+  margin: 18px;
+  font-size: 14px
+}
+
+#account-attributes-challenge .reg-form {
+  margin-top: 22px
+}
+
+#account-attributes-challenge .usernamereg-email:invalid {
+  border-bottom: 2px solid #188fff
+}
+
+#account-attributes-challenge .domain-label {
+  margin: 8px 0;
+  font-size: 12px
+}
+
+#account-attributes-challenge input[type=radio]+label {
+  display: inline;
+  margin-right: 4px
+}
+
+@media all and (max-width:321px) {
+  #account-attributes-challenge {
+    max-width: 300px
+  }
+}
+
+#account-attributes-challenge .challenge-feedback-text {
+  display: block;
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: .82rem
+}
+
+@media all and (max-width:414px) {
+  #account-attributes-challenge .ureg-sign-in {
+    margin-top: 20px;
+    padding-bottom: 20px
+  }
+}
+
+#challenge-desc .challenge-desc {
+  padding: 0 5px
+}
+
+.auth-link-challenge .email-link-img {
+  background: url(https://s.yimg.com/wm/mbr/images/email-link-authentication-link-v0.0.1.svg) center/auto 3.29412rem no-repeat
+}
+
+.login-box,
+.login-box .mbr-login-hd,
+.loginish,
+.mbr-desktop-hd,
+.mbr-login-hd {
+  background-color: #fff
+}
+
+.login-box-logo {
+  text-align: center;
+  height: 50px
+}
+
+.login-box-logo img {
+  width: 110px
+}
+
+.loginish {
+  min-height: 100%
+}
+
+.login-box-container {
+  margin: 0 auto;
+  max-width: 1030px;
+  min-width: 320px;
+  position: relative
+}
+
+.login-box {
+  position: absolute;
+  top: 11px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+  width: 360px;
+  right: 0;
+  min-height: 550px;
+  z-index: 1;
+  padding: 28px 5px 10px;
+  border: 1px solid transparent;
+  border-top: 1px solid #f1f1f5
+}
+
+.grid .login-box {
+  padding-top: 0
+}
+
+.login-box.center-box {
+  position: static;
+  margin: 0 auto
+}
+
+.login-box.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+@media screen and (max-width:1040px) {
+  .login-box {
+    right: 10px
+  }
+}
+
+@media screen and (max-width:480px) {
+  .login-box {
+    right: 0;
+    left: 0;
+    margin: 0 auto
+  }
+}
+
+@media screen and (max-width:359px) {
+  .login-box {
+    width: 320px;
+    padding: 0
+  }
+}
+
+.challenge .feedback {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px
+}
+
+.error-msg {
+  padding-left: 0
+}
+
+#full-name-challenge .error-msg {
+  padding-left: .47059rem
+}
+
+input[name=nationalPhoneNumber]:focus:invalid:focus {
+  border-color: #188fff;
+  color: #101010
+}
+
+#password-challenge h2 {
+  font-size: 19px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 24px
+}
+
+#password-challenge .username {
+  padding: 5px;
+  text-transform: none;
+  font-size: 18px;
+  word-wrap: break-word
+}
+
+.challenge .challenge-form.password-form {
+  margin-top: 0
+}
+
+#password-challenge .password-form .input-group {
+  margin-top: 1.17647rem
+}
+
+#password-challenge .input-group input[type=password]::placeholder {
+  letter-spacing: normal;
+  font-weight: 400
+}
+
+.mbr-login-hd {
+  margin-bottom: 1.4rem
+}
+
+.mbr-login-hd .logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 90vw;
+  padding-top: 18px;
+  padding-bottom: 18px
+}
+
+.grid .login-box .mbr-login-hd,
+.grid .mbr-login-hd {
+  padding-top: 28px;
+  padding-bottom: 0
+}
+
+.grid .mbr-login-hd {
+  margin-bottom: 0
+}
+
+.mbr-desktop-hd {
+  position: relative;
+  color: #26282a;
+  line-height: 84px;
+  padding-left: 50px
+}
+
+.mbr-desktop-hd .column {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 0
+}
+
+.username-challenge form {
+  margin-top: 3.58824rem
+}
+
+.username-challenge .signup-desc {
+  margin-bottom: .58824rem
+}
+
+.username-challenge .input-group .phone-no {
+  display: inline-block
+}
+
+.phone-no {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.username-challenge .challenge-feedback-link {
+  margin-top: 1.4rem
+}
+
+.username-challenge .error-msg {
+  text-align: left
+}
+
+.username-challenge .challenge-button-link {
+  text-align: center;
+  display: block
+}
+
+#yid-challenge {
+  padding: 0 10px;
+  max-width: 320px;
+  margin: 0 auto
+}
+
+#yid-challenge .ureg-sign-in {
+  margin-top: 28px;
+  font-size: 14px
+}
+
+#createacc {
+  margin-top: 5%
+}
+
+.success-msg {
+  width: max-content;
+  right: 2vh;
+  bottom: 2vh;
+  height: max-content;
+  position: absolute;
+  font-weight: 500;
+  padding: 1% 2%;
+  border-width: 2px;
+  border-radius: 0.75vh;
+  background-color: rgb(71, 156, 119);
+  color: white;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .25);
+  animation: slideRightToLeft 0.5s;
+  transition: 0.3s;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateY(100%);
+  }
+}

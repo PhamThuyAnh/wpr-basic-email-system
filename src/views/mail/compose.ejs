@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email | Compose</title>
+	<link rel="stylesheet" type="text/css" href="/styles/auth.css">
+	<link rel="stylesheet" type="text/css" href="/styles/mail.css">
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<a href="/" id="left">
+				<img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" />
+			</a>
+			<div id="right">
+				<a href="#" id="proflie-link">
+					<img src="https://th.bing.com/th/id/R.9d32bec8058bd3595a63a08a8cc12ade?rik=9cCTin36GLU%2f5w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_87237.png&ehk=hVpH%2bC7rwlA1j2KqxGpMs1sp9l0RgM0jjRJsJsvDoPc%3d&risl=&pid=ImgRaw&r=0" alt="Avatar" style="width: 27px; margin-right: 10px" />
+					<%= params.username ? params.username : '' %>
+				</a>
+				<a href="/sign-out"><button id="sign-out-link">Sign out</button></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li class="selected">
+				<img src="icons/compose.png" alt="compose" />
+				<a href="/compose">Compose</a>
+			</li>
+			<li>
+				<img src="icons/inbox.png" alt="inbox" />
+				<a href="/inbox">Inbox</a>
+			</li>
+			<li>
+				<img src="icons/outbox.png" alt="outbox" />
+				<a href="/outbox">Outbox</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+		<section class="compose">
+			<form class="compose-tables" action="/send-email" method="post">
+				<table>
+					<tr id="first">
+						<td>
+							<label for="to">To</label>
+						</td>
+						<td>
+							<select id="to" name="email_recipient">
+								<% for (let user of users)  { %>
+								<option value="<%= user.id %>"><%= user.username %></option> <% } %>
+							</select>
+						</td>
+					</tr>
+					<tr id="second">
+						<td>
+							<label for="subject">Subject</label>
+						</td>
+						<td>
+							<input id="subject" type="text" name="email_subject" placeholder="(no subject)">
+						</td>
+					</tr>
+					<tr id="third">
+						<td></td>
+						<td>
+							<textarea id="content" name="email_content" placeholder=""></textarea>
+						</td>
+					</tr>
+				</table>
+				<input class="btn" type="submit" value="SEND">
+			</form>
+
+			<% if (msg) { %>
+			<div class="success-msg"> <%= msg %> </div>
+			<script>
+				setTimeout(function() {
+					document.querySelector('.success-msg').style.display = 'none';
+				}, 5000);
+			</script>
+			<% } %>
+		</section>
+	</main>
+
+</body>
+
+</html>

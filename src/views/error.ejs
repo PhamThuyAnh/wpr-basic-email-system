@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Error</title>
+	<link rel="stylesheet" href="styles/font.css">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		.response-error {
+			width: 50%;
+			text-align: center;
+		}
+
+		.no-break {
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body>
+	<div class='response-error'>
+		<h1>Error <%= error ? error : '' %></h1>
+		<hr>
+		<p>You don't have permission to access this page.</p>
+		<p>Please <a class="no-break" href="/sign-in">sign in</a> to continue.</p>
+	</div>
+</body>
+
+</html>
